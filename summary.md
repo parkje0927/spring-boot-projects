@@ -181,3 +181,21 @@
 - 임시 저장소 기능 : 해당 HTTP 요청이 시작부터 끝날 때까지 유지되는 임시 저장소 기능
 - 세션 관리 기능
 - HTTP 요청 메시지, HTTP 응답 메시지를 편리하게 사용하도록 도와주는 객체이다!!
+
+### HTTP 요청 데이터 
+- 주로 3가지 방법을 사용
+
+<br>
+
+- GET 쿼리 파라미터 
+  - /url?username=hello&age=20
+  - 메시지 바디 없이 url 의 쿼리 파라미터에 데이터를 포함해서 전달
+  - 예) 검색, 필터, 페이징 등에서 많이 사용하는 방식
+- POST HTML Form
+  - contentType: application/x-www-from-urlencoded
+  - 메시지 바디에 쿼리 파라미터 형식으로 전달 username=hello&age=20
+  - 예) 회원가입, 상품주문, HTML Form 사용
+- HTTP message body 에 데이터를 직접 담아서 요청
+  - HTTP API 에서 주로 사용, JSON, XML, TEXT
+- 데이터 형식은 주로 JSON 사용
+  - POST, PUT, PATCH
