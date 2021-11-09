@@ -199,3 +199,7 @@
   - HTTP API 에서 주로 사용, JSON, XML, TEXT
 - 데이터 형식은 주로 JSON 사용
   - POST, PUT, PATCH
+
+### HTTP 요청 데이터 - GET 쿼리 파라미터 
+- http://localhost:8080/request-param?username=hello&age=20
+- 
