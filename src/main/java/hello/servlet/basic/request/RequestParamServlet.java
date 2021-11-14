@@ -47,3 +47,13 @@ public class RequestParamServlet extends HttpServlet {
         resp.getWriter().write("ok");
     }
 }
+
+/**
+ * application/x-www-form-urlencoded 형식은 앞서 GET 에서 살펴본 쿼리 파라미터 형식과 같다.
+ * 따라서 쿼리 파라미터 조회 메서드를 그대로 사용하면 된다.
+ * 웹 브라우저 입장에서는,
+ * 두 방식(http://localhost:8080/request-param?usernae=hello&age=20 과 form 으로 전달하는 방식)에 차이가 있지만,
+ *
+ * 서버 입장에서는,
+ * 둘의 형식이 동일하므로 request.getParameter() 로 편리하게 구분없이 조회할 수 있다.
+ */
