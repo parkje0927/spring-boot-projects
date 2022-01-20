@@ -202,4 +202,9 @@
 
 ### HTTP 요청 데이터 - GET 쿼리 파라미터 
 - http://localhost:8080/request-param?username=hello&age=20
-- 
+
+### FrontController 패턴 특징
+- 프론트 컨트롤러 서블릿 하나로 클라이언트의 요청을 받음
+- 프론트 컨트롤러가 요청에 맞는 컨트롤러를 찾아서 호출
+- 공통 처리 가능 
+- 스프링 웹 MVC 의 DispatcherServlet 이 FrontController 패턴으로 구현되어 있음.
