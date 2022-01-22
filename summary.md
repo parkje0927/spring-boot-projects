@@ -208,3 +208,8 @@
 - 프론트 컨트롤러가 요청에 맞는 컨트롤러를 찾아서 호출
 - 공통 처리 가능 
 - 스프링 웹 MVC 의 DispatcherServlet 이 FrontController 패턴으로 구현되어 있음.
+
+### Model 추가 - V3
+- FrontController 가 Controller 를 호출
+- -> ModelView 반환
+- -> viewResolver 호출(**위에서 반환한 view 의 논리 이름을 물리 이름으로 바꿔주는 역할을 한다.**)
