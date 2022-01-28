@@ -213,3 +213,6 @@
 - FrontController 가 Controller 를 호출
 - -> ModelView 반환
 - -> viewResolver 호출(**위에서 반환한 view 의 논리 이름을 물리 이름으로 바꿔주는 역할을 한다.**)
+
+### MVC
+- RequestMappingHandlerAdapter : RequestMapping 어노테이션을 처리해주는 어댑터
