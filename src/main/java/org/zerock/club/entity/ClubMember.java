@@ -18,13 +18,11 @@ import java.util.Set;
 public class ClubMember extends BaseEntity {
 
     @Id
-    private String email;
+    private String id;
 
     private String password;
 
-    private String name;
-
-    private String fromSocial;
+    private boolean fromSocial;
 
     @ElementCollection(fetch = FetchType.LAZY)
     @Builder.Default
